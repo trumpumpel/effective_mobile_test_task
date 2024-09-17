@@ -1,13 +1,13 @@
 from data.auth_data import TestAuthData
 from pages.base_page import BasePage
-from conftest import web_driver
+from conftest import driver
 from locators.basket_page_locators import BasketPageLocators
 
 
 class BasketPage(BasePage):
 
-    def __init__(self, web_driver):
-        super().__init__(web_driver)
+    def __init__(self, driver):
+        super().__init__(driver)
 
     def set_slb_in_basket(self):
         return self.find_element(BasketPageLocators.SLB_LOC_BSKT, 100)

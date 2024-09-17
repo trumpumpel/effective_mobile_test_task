@@ -1,23 +1,23 @@
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.remote.webdriver import WebDriver
-from conftest import web_driver
+from conftest import driver
 import allure
 from data.auth_data import TestAuthData
 from locators.base_page_locators import BasePageLocators
 
 
 class BasePage:
-    def __init__(self, web_driver: WebDriver):
-        self.web_driver = web_driver
+    def __init__(self, driver: WebDriver):
+        self.driver = driver
 
     @allure.step("Открываем страницу")
     def navigate(self, url: str):
-        self.web_driver.get(url)
+        self.driver.get(url)
 
     @allure.step("Ищем элемент на странице")
     def find_element(self, locator: tuple, timeout: 15) -> object:
-        return WebDriverWait(self.web_driver, timeout).until(EC.presence_of_element_located(locator))
+        return WebDriverWait(self.driver, timeout).until(EC.presence_of_element_located(locator))
 
     @allure.step("Ищем и кликаем по найденому элементу")
     def click_element(self, locator: tuple, timeout: 15):
