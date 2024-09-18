@@ -1,15 +1,10 @@
-import time
-
 from conftest import driver
-
 from data.url_data import TestUrlData
 from pages.basket_page import BasketPage
-
 from data.auth_data import TestAuthData
-from data.url_data import TestUrlData
 
 
-class TestMainPage:
+class TestBasketPage:
     def test_fnd_add_slb(self, driver):
         mf_page = BasketPage(driver)
         mf_page.set_name()

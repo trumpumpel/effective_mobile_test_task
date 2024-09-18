@@ -13,3 +13,7 @@ class BasketPageLocators:
     BTN_CONT_OP = (By.CSS_SELECTOR, "input[name='continue']")
     BTN_FIN_OP = (By.CSS_SELECTOR, "button[name='finish']")
     EL_CMPT = (By.XPATH, "//h2[@class='complete-header']")
+
+    # SET_NAME_LOG = (By.CSS_SELECTOR, "input[name='user-name']")
+    # SET_PAS_LOG = (By.CSS_SELECTOR, "input[name='password']")
+    # SUB_BTN_CLICK_LOG = (By.CSS_SELECTOR, "input[name='login-button']")

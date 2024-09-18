@@ -1,14 +1,14 @@
 from conftest import driver
 
-from pages.main_page import MainPage
+from pages.base_page import BasePage
 
 from data.url_data import TestUrlData
 
 
-class TestMainPage:
+class TestBasePage:
 
     def test_click_aut(self, driver):
-        mf_page = MainPage(driver)
+        mf_page = BasePage(driver)
         mf_page.set_name()
         mf_page.set_pas()
         mf_page.enter_button_click()
