@@ -11,5 +11,6 @@ pip install -r requirements.txt
 3. Убедитесь, что у вас установлен драйвер для браузера Chrome (chromedriver) и он находится в PATH.
 
 
-4. Запустите скрипт:
-python test_saucedemo.py
+4. Запустите скрипты:
+python test_base_page.py
+python test_basket_page.py
