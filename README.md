@@ -1,16 +1,17 @@
-Этот проект предназначен для автоматического e2e тестирования сценария покупки товара на сайте saucedemo.com с использованием Selenium.
+Проект предназначен для автоматического e2e тестирования сценария покупки товара на сайте saucedemo.com с использованием 
+Selenium, Python, Pytest.
 
-1. Клонируйте репозиторий:
+Шаги/порядок запуска:
+1. Клонировать репозиторий:
 git clone https://github.com/trumpumpel/effective_mobile_test_task
 cd effective_mobile_test_task
 
 
-2. Установите зависимости:
+2. Установить зависимости:
 pip install -r requirements.txt
 
-3. Убедитесь, что у вас установлен драйвер для браузера Chrome (chromedriver) и он находится в PATH.
+3. Убедиться, что у вас установлен драйвер для браузера Chrome (chromedriver) и он находится в PATH.
 
 
-4. Запустите скрипты:
-python test_base_page.py
-python test_basket_page.py
+4. Запустить скрипт в терминале:
+pytest

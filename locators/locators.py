@@ -1,7 +1,11 @@
 from selenium.webdriver.common.by import By
 
 
-class BasketPageLocators:
+class Locators:
+    SET_NAME_LOGIN = (By.CSS_SELECTOR, "input[name='user-name']")
+    SET_PAS_LOGIN = (By.CSS_SELECTOR, "input[name='password']")
+    SUB_BTN_CLICK_LOG = (By.CSS_SELECTOR, "input[name='login-button']")
+    BASKET_LOC = (By.CSS_SELECTOR, "a[data-test='shopping-cart-link']")
     BTN_SLB_CL = (By.XPATH, "//button[text()='Add to cart']")
     SLB_LOC_BSKT = (By.XPATH, "//div[@class='inventory_item_name']")
     DEL_LOC_BSKT = (By.XPATH, "//button[@class='btn btn_secondary btn_small cart_button']")
@@ -13,7 +17,3 @@ class BasketPageLocators:
     BTN_CONT_OP = (By.CSS_SELECTOR, "input[name='continue']")
     BTN_FIN_OP = (By.CSS_SELECTOR, "button[name='finish']")
     EL_CMPT = (By.XPATH, "//h2[@class='complete-header']")
-
-    # SET_NAME_LOG = (By.CSS_SELECTOR, "input[name='user-name']")
-    # SET_PAS_LOG = (By.CSS_SELECTOR, "input[name='password']")
-    # SUB_BTN_CLICK_LOG = (By.CSS_SELECTOR, "input[name='login-button']")
